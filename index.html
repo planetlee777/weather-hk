@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/ee24971f7f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>weather.io</title>
+</head>
+<body>
+    <div class="bg-cover bg-center bg-fixed" style="background-image: url('media/weather.io.png')">
+        <div>
+            <div class="flex flex-col items-start py-14	px-14 md:h-screen">
+                <div class="w-full bg-pink-300 rounded-lg shadow max-w-screen-lg max-h-fit py-2 outline-dashed outline-white outline-4">
+                    <div class="p-6 space-y-4 md:space-y-6 sm:p-8">     
+<form class="flex items-center">   
+    <div class="relative w-1/2">
+        <div class="relative inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+        </div>
+        <input type="text" class="bg-gray-50 border-none shadow-xl text-sm rounded-tl-lg rounded-bl-lg block w-full p-4 tracking-widest	" placeholder="ENTER YOUR LOCATION...">
+        <button type="button" class="absolute inset-y-0 right-0 flex items-center pr-3">
+        </button>
+    </div>
+    <button type="submit" class=" p-2.5 inline-flex items-center text-md font-medium text-black bg-pink-200 border-none hover:bg-pink-100 tracking-widest">
+        <img src="media/search.png" alt="" class="w-8 h-8">
+        SEARCH
+    </button>
+    <button type="submit" class="p-2.5 inline-flex items-center text-sm font-medium text-black bg-pink-200 rounded-br-lg rounded-tr-lg border-none hover:bg-pink-100 tracking-widest"><img src="media/location.png" alt="" class=" w-8 h-8">CURRENT LOCATION</button>
+</form>
+<div class="location">
+    <p class="text-center" id="location">CURRENT LOCATION</p>
+</div>
+                        <div class="card w-96 bg-pink-100 shadow-xl mx-auto rounded-lg text-center text-black">
+                            <div class="card-body py-2 px-4 hover:bg-pink-200 hover:border rounded-lg">
+                                <p class="font-bold tracking-widest">RIGHT NOW</p>
+                              <h2 class="card-title"></h2>
+                              <div class="card-actions justify-end">
+                                <p>PART CLOUDY</p>
+                                <img src="media/partly-cloudy.png" class="h-8 mx-auto">
+                                <p class="flex">TEMP: </p>
+                                <p class="flex">HIGH: </p>
+                                <p class="flex">LOW: </p>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="font-bold tracking-wide text-2xl">----------------------------------------------------------------------------------------------------</p>
+                          <div class="grid grid-cols-5">
+                            <div class="bg-pink-200 rounded-lg p-4 w-40">
+                                <h2 class="text-lg font-bold text-black tracking-widest">TOMORROW</h2>
+                                <p class="text-center">CLOUDY</p>
+                                <p class="text-black text-center"><img src="media/cloudy.png" alt="#" class="h-8 mx-auto"></p>
+                                <p>TEMP: </p>
+                                <p>HIGH: </p>
+                                <p>LOW: </p>
+                            </div>
+                        
+                            <div class="bg-pink-200 rounded-lg p-4 w-40">
+                                <h2 class="text-lg font-bold text-black tracking-widest">WEDNESDAY</h2>
+                                <p class="text-center">SUNNY</p>
+                                <p class="text-black text-center"><img src="media/sunny.png" alt="#" class="h-8 mx-auto"></p>
+                                <p>TEMP: </p>
+                                <p>HIGH: </p>
+                                <p>LOW: </p>
+                            </div>
+                        
+                            <div class="bg-pink-200 rounded-lg p-4 w-40">
+                                <h2 class="text-lg font-bold text-black tracking-widest">THURSDAY</h2>
+                                <p class="text-center">SUNNY</p>
+                                <p class="text-black text-center"><img src="media/sunny.png" alt="#" class="h-8 mx-auto"></p>
+                                <p>TEMP: </p>
+                                <p>HIGH: </p>
+                                <p>LOW: </p>
+
+                            </div>
+                            <div class="bg-pink-200 rounded-lg p-4 w-40">
+                                <h2 class="text-lg font-bold text-black tracking-widest">FRIDAY</h2>
+                                <p class="text-center">PART CLOUDY</p>
+                                <p class="text-black text-center"><img src="media/partly-cloudy.png" alt="#" class="h-8 mx-auto"></p>
+                                <p>TEMP: </p>
+                                <p>HIGH: </p>
+                                <p>LOW: </p>
+
+                            </div>
+                            <div class="bg-pink-200 rounded-lg p-4 w-40">
+                                <h2 class="text-lg font-bold text-black tracking-widest">SATURDAY</h2>
+                                <p class="text-center">RAIN</p>
+                                <p class="text-black text-center"><img src="media/rain.png" alt="#" class="h-8 mx-auto"></p>
+                                <p>TEMP: </p>
+                                <p>HIGH: </p>
+                                <p>LOW: </p>
+                            </div>
+                        </div>
+</div>
+                </div>
+            </div>
+        </div>
+          
+</body>
+<script src="script.js"></script>
+</html>
